@@ -18,4 +18,5 @@ export PHONE
 3. Setup your cron
 ```
 0 */6 * * * (. $HOME/.bash_profile; date; /home/pi/py3.7.3/bin/python nju-forever/nju_forever.py) >> /var/tmp/sms.log 2>&1
+
 ```
