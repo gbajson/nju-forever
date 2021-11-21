@@ -1,6 +1,11 @@
 # nju-forever
 Simple script to keep alive nju mobile account
 
+Script does use 'mailx' client to set up emails.
+Sample configuration of SMTP and email client:
+https://gist.github.com/gbajson/88d179499136dc5945f5a13fd6a8b9ff
+
+
 1. Install requirements
 ```
 git clone https://github.com/gbajson/nju-forever.git
