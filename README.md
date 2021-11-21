@@ -11,7 +11,7 @@ pip install -r requirements.txt
 2. Add your additionl phone number to .bash_profile
 ```
 pi@raspberrypi:~ $ cat .bash_profile
-PHONE="+1234567890123"
+EMAIL="your@email.address.to.receive.notifications"
 export PHONE
 ```
 

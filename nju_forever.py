@@ -5,9 +5,8 @@ from huawei_lte_api.Client import Client
 from huawei_lte_api.Connection import Connection
 from sh import mailx
 
-number = os.environ["PHONE"]
 email = os.environ["EMAIL"]
-hostname = os.environ.get('HOSTNAME')
+hostname = os.environ.get("HOSTNAME")
 
 # For limited access, I have valid credentials no need for limited access
 with Connection("http://192.168.8.1/") as connection:
@@ -23,11 +22,6 @@ if isinstance(messages, list):
         if msg["Index"] == "40000":
             continue
         pprint.pprint(msg)
-
-        if msg["Phone"] == number:
-            # client.sms.send_sms([number], 'TAK')
-            message = client.sms.delete_sms(int(msg["Index"]))
-            print(message)
 
         if msg["Phone"] == "nju mobile":
             client.sms.send_sms(["80608"], "TAK")
