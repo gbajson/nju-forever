@@ -1,1 +1,2 @@
 huawei_lte_api
+sh
